@@ -6,11 +6,11 @@ import {
 } from ".";
 import { Layout, Header } from "../components/modules";
 
-export default function Routes() {
+export default function Routes(props) {
   return (
     <BrowserRouter>
       <Layout>
-        <Header />
+        <Header props={props} />
         <Switch>
           {/* PLOP_INJECT_ROUTE */}
           <Route exact path="/" component={Home} />
